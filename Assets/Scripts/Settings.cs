@@ -29,11 +29,11 @@ public class Settings : MonoBehaviour
         allOn.onClick.AddListener(() => ToggleAllToggles(true));
         allOff.onClick.AddListener(() => ToggleAllToggles(false));
         resetButton.onClick.AddListener(ResetScene);
-        
+
 
         flags = FindObjectsOfType<Flag>();
         slots = FindObjectsOfType<Slot>();
-
+        settingsPanel.gameObject.SetActive(false);
         UpdateSettings();
     }
 
@@ -45,7 +45,8 @@ public class Settings : MonoBehaviour
         }
     }
 
-    public void ResetScene(){
+    public void ResetScene()
+    {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name, LoadSceneMode.Single);
     }

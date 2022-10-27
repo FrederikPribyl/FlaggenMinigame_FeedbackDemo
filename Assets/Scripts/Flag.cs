@@ -59,7 +59,9 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         locked = true;
         if(animation_enabled)
         GetComponent<Animator>().SetBool("locked", true);
-        transform.position = new Vector3(transform.position.x, transform.position.y, 1f);
+        transform.SetParent(GameManager.Instance.lockedFlagsParent);
+        // Vector3 pos = GetComponent<RectTransform>().anchoredPosition3D;
+        // GetComponent<RectTransform>().anchoredPosition3D = new Vector3(pos.x, pos.y, 1f);
     }
 
     public void RestoreStartPosition(){

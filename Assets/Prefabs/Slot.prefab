@@ -1198,7 +1198,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   RotationModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 3
@@ -3446,7 +3446,7 @@ ParticleSystem:
     range: {x: 0, y: 1}
     separateAxes: 0
   RotationBySpeedModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -3556,7 +3556,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.7853982
+      scalar: 2.0943952
       minScalar: 0.7853982
       maxCurve:
         serializedVersion: 2
@@ -5067,6 +5067,7 @@ MonoBehaviour:
   id: pride
   title: Pride
   label_TMP: {fileID: 8048562299287949688}
+  particles_enabled: 0
 --- !u!222 &8048562299672412700
 CanvasRenderer:
   m_ObjectHideFlags: 0

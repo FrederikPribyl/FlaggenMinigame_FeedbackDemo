@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public RectTransform progressBar_fill;
     float progressBar_max_width;
     public Gradient progressBar_gradient;
+    public RectTransform lockedFlagsParent;
 
     private void Start() {
         Instance = this;
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     private void Update() {
         CheckProgress();
+
+        if(Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     void CheckProgress(){
