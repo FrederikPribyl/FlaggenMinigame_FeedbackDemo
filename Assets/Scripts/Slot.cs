@@ -9,6 +9,7 @@ public class Slot : MonoBehaviour, IDropHandler
     public string id;
     public string title;
     public TMP_Text label_TMP;
+    public bool particles_enabled;
 
     private void Start() {
         label_TMP.text = title;
@@ -20,7 +21,7 @@ public class Slot : MonoBehaviour, IDropHandler
             if(flag.id.Equals(this.id)){
                 flag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
                 flag.Lock();
-                GetComponentInChildren<ParticleSystem>().Play();
+                if(particles_enabled) GetComponentInChildren<ParticleSystem>().Play();
             } 
             else flag.RestoreStartPosition();
         }

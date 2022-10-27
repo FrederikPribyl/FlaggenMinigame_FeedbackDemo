@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     Flag[] flags;
+    public static GameManager Instance;
     public RectTransform progressBar_fill;
     float progressBar_max_width;
     public Gradient progressBar_gradient;
 
     private void Start() {
+        Instance = this;
         flags = GameObject.FindObjectsOfType<Flag>();
         progressBar_max_width = progressBar_fill.sizeDelta.x;
     }

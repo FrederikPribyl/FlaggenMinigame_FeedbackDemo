@@ -15,6 +15,7 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     CanvasGroup canvasGroup;
 
     [HideInInspector] public bool locked;
+    public bool animation_enabled;
 
     private void Start()
     {
@@ -56,7 +57,9 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void Lock(){
         locked = true;
+        if(animation_enabled)
         GetComponent<Animator>().SetBool("locked", true);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 1f);
     }
 
     public void RestoreStartPosition(){
