@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum OptionID { ProgressBar, Animation, Particles }
+public enum OptionID { ProgressBar, Animation, Particles, SlotDepth }
 
 public class Settings : MonoBehaviour
 {
@@ -34,6 +34,9 @@ public class Settings : MonoBehaviour
         flags = FindObjectsOfType<Flag>();
         slots = FindObjectsOfType<Slot>();
         settingsPanel.gameObject.SetActive(false);
+
+
+        ToggleAllToggles(false);
         UpdateSettings();
     }
 
@@ -47,8 +50,10 @@ public class Settings : MonoBehaviour
 
     public void ResetScene()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name, LoadSceneMode.Single);
+        // Scene scene = SceneManager.GetActiveScene();
+        // SceneManager.LoadScene(scene.name, LoadSceneMode.Single);
+        foreach(Flag f in flags) f.Reset();
+        UpdateSettings();
     }
 
     public void ToggleAllToggles(bool t)
@@ -76,8 +81,12 @@ public class Settings : MonoBehaviour
         foreach (Flag f in flags)
         {
             f.animation_enabled = GetOption(OptionID.Animation);
+            if(f.locked == false)
             f.GetComponent<Animator>().SetBool("rotated", GetOption(OptionID.Animation));
         }
+        // Slot Sprite Depth:
+        foreach(Slot s in slots)
+            s.SetDepthSprite(GetOption(OptionID.SlotDepth));
 
     }
 

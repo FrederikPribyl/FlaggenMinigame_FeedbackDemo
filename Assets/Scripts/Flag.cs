@@ -7,6 +7,7 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 {
     public string id;
 
+    Vector2 initPosition;
     Vector2 startPos;
     Camera cam;
     RectTransform rectTransform;
@@ -24,6 +25,7 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         canvasGroup = GetComponent<CanvasGroup>();
         fullscreen_reference = GameObject.FindObjectOfType<FullScreenReference>().GetComponent<RectTransform>();
         locked = false;
+        initPosition = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -66,6 +68,13 @@ public class Flag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void RestoreStartPosition(){
         rectTransform.anchoredPosition = startPos;
+    }
+
+    public void Reset(){
+        rectTransform.anchoredPosition = initPosition;
+        locked = false;
+        GetComponent<Animator>().SetBool("locked", false);
+        transform.SetParent(GameManager.Instance.lockedFlagsParent.parent);
     }
 
 }

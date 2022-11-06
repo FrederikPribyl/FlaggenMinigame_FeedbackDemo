@@ -5068,6 +5068,8 @@ MonoBehaviour:
   title: Pride
   label_TMP: {fileID: 8048562299287949688}
   particles_enabled: 0
+  sprite_flat: {fileID: -165345517, guid: a8013ab7a4e67954f9de2762146be330, type: 3}
+  sprite_depth: {fileID: 1962658134, guid: a8013ab7a4e67954f9de2762146be330, type: 3}
 --- !u!222 &8048562299672412700
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5096,7 +5098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1962658134, guid: a8013ab7a4e67954f9de2762146be330, type: 3}
+  m_Sprite: {fileID: -165345517, guid: a8013ab7a4e67954f9de2762146be330, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
