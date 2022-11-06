@@ -55,6 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: pride
   locked: 0
+  animation_enabled: 0
 --- !u!222 &3773742061545802560
 CanvasRenderer:
   m_ObjectHideFlags: 0
