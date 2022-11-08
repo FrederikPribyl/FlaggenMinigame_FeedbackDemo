@@ -132,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 608
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: flags_1
       rect:
         serializedVersion: 2
-        x: 480
-        y: 600
+        x: 484
+        y: 608
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: flags_2
       rect:
         serializedVersion: 2
-        x: 960
-        y: 600
+        x: 968
+        y: 608
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: flags_3
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 600
+        x: 1452
+        y: 608
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,11 +216,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 300
+        y: 304
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: flags_5
       rect:
         serializedVersion: 2
-        x: 480
-        y: 300
+        x: 484
+        y: 304
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: flags_6
       rect:
         serializedVersion: 2
-        x: 960
-        y: 300
+        x: 968
+        y: 304
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: flags_7
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 300
+        x: 1452
+        y: 304
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,8 +303,8 @@ TextureImporter:
         y: 0
         width: 480
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,27 +312,6 @@ TextureImporter:
       bones: []
       spriteID: 21a2e747b3c82324c8b28f8aec5c2b5f
       internalID: -165345517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: flags_9
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 480
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6544a7884f94f6498c92bb8c5d9f659
-      internalID: 1888921714
       vertices: []
       indices: 
       edges: []
@@ -354,7 +333,6 @@ TextureImporter:
       flags_7: -1910774325
       flags_2: 627956778
       flags_6: -1115701639
-      flags_9: 1888921714
       flags_4: -2131076739
       flags_3: 191448770
       flags_5: -36341825
